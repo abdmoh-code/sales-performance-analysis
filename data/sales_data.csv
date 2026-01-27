@@ -1,0 +1,11 @@
+order_date,order_month,customer_id,segment,region,product_category,sales,profit,profit_margin
+2024-01-05,2024-01,C001,Consumer,East,Furniture,500.0,50.0,0.1
+2024-01-18,2024-01,C002,Corporate,West,Technology,1200.0,300.0,0.25
+2024-01-25,2024-01,C003,Small Business,South,Office Supplies,200.0,20.0,0.1
+2024-02-03,2024-02,C001,Consumer,East,Technology,800.0,200.0,0.25
+2024-02-14,2024-02,C004,Corporate,North,Furniture,700.0,70.0,0.1
+2024-02-20,2024-02,C005,Consumer,West,Office Supplies,150.0,10.0,0.0667
+2024-03-02,2024-03,C002,Corporate,West,Technology,1500.0,350.0,0.2333
+2024-03-10,2024-03,C006,Small Business,East,Furniture,400.0,30.0,0.075
+2024-03-18,2024-03,C003,Small Business,South,Technology,600.0,120.0,0.2
+2024-03-25,2024-03,C001,Consumer,East,Office Supplies,250.0,25.0,0.1
