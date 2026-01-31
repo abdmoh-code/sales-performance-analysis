@@ -9,14 +9,15 @@ The analysis is performed first in Excel for exploration and validation, then re
 ## Tools Used
 - Microsoft Excel (Pivot Tables, Charts)
 - SQL (SQLite)
-- DB Browser for SQLite 
+- DB Browser for SQLite
+- Power BI (interactive dashboards, DAX measures) 
 - GitHub (version control and documentation)
 
 ## Dataset
 - `sales_data.csv` 
 
 The dataset contains transactional sales data including:
-- Order date 
+- Order Date 
 - Sales amount 
 - Profit 
 - Product category 
@@ -28,6 +29,16 @@ The dataset contains transactional sales data including:
 - Profit Margin (weighted) 
 - Average Profit per Order 
 
+## Power BI Dashboard
+An interactive dashboard was created in Power BI to visualize key metrics across dimensions. The dashboard includes:
+- KPI cards for Total Sales, Total Profit, and Profit Margin %.
+- Line chart showing sales trends over time
+- Column chart comparing performance by Product Category
+- Slicers for Product Category and Customer Segment to explore different business dimensions
+**Dashboard Preview:**
+![Dashboard Overview](power_bi/sales_perfomance_dashboard/sales_performance_dashboard.png) 
+
+
 ## Key Insights
 - **March** shows the highest sales ($2,750) with strong profitability, indicating month-over-month growth. 
 - **Technology** products drive the majority of revenue and profit, making them the primary growth engine. 
@@ -36,12 +47,18 @@ The dataset contains transactional sales data including:
 > *Note:* Minor differences may exist between Excel pivot table results and SQL outputs due to calculation methodology. SQL uses a weighted profit margin (`SUM(profit) / SUM(sales)`), which more accurately reflects overall business performance than averaging row-level margins.
 
 ## Repository Structure
-- `sql/` 
-  - `sales_analysis.sql`: SQL queries for KPI calculation, monthly performance, product category analysis, customer segment analysis, and month × segment breakdowns 
-
 - `data/` 
   - `sales_data.csv`: Source dataset used for both Excel and SQL analysis 
 
-## Next Steps
-- Build an interactive Power BI dashboard using the same dataset 
-- Validate metrics across Excel, SQL, and Power BI 
+- `excel/`
+  - `Sales_Performance_Analysis.xlsx`
+
+- `sql/` 
+  - `sales_analysis.sql`: SQL queries for KPI calculation, monthly performance, product category analysis, customer segment analysis, and month x segment breakdowns 
+
+- `power_bi/`
+  - `sales_performance_dashboard/`
+    - `sales_performance_dashboard.pbix`
+    - `sales_performance_dashboard.png`
+    - `sales_performance_dashboard_PDF.pdf`
+
